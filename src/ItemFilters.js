@@ -40,7 +40,6 @@ export default class ItemFilters extends React.Component{
                     <li><span>True</span></li>
                     <li><span>False</span></li>
                 </ul>
-               
             </div>
          );
     }

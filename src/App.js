@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import ItemFilters from './ItemFilters';
+import ItemListing from './ItemListing';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+       <h2>SpaceX Launch Programs</h2> 
+       
+        <ItemListing url="https://api.spacexdata.com/v3/launches?limit=100"/>
+        <footer><strong>Developed by:</strong> Sajay CV Rajan</footer>
     </div>
   );
 }

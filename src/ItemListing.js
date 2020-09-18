@@ -48,7 +48,6 @@ export default class ItemListing extends React.Component{
         var year = this.state.year ? '&launch_year='+this.state.year : "";
         var launch_success = this.state.launch_success ? '&launch_success='+this.state.launch_success : '';
         var land_success = this.state.land_success ? '&land_success='+this.state.land_success : '';
-       //var url = 'https://api.spacexdata.com/v3/launches?limit=100'+this.state.launch_success+'&amp;land_success='+this.state.land_success+'&amp;launch_year='+this.state.year;
        var url = 'https://api.spacexdata.com/v3/launches?limit=100'+year+launch_success+land_success;
         fetch(url,{
             method:'GET',
